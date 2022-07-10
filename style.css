@@ -50,6 +50,10 @@ body {
     border-radius: .5rem;
 }
 
+.btn:hover, .box:hover {
+    cursor: pointer;
+}
+
 .gameModes {
     background-color: black;
     display: flex;
