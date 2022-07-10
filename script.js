@@ -23,6 +23,7 @@ const createCorrectBox = function() {
     colorText.textContent = `The color is ${boxes[correctBox].style.backgroundColor}`;
 };
 
+// removes 4 more boxes unless theres already only 4 and undisables hardBtn 
 const easyMode = function() {
     hardBtn.disabled = false;
     
@@ -37,7 +38,7 @@ const easyMode = function() {
     };
    
 };
-
+// adds 4 more boxes unless theres 12 if 12 hardBtn disables also undisables easyBtn
 const hardMode = function() {
     easyBtn.disabled = false;
     
@@ -56,7 +57,10 @@ const hardMode = function() {
    
 };
 
+// resets the text and boxes back to 4 also undisables easy and hard btns
+
 const resetMode = function() {
+    colorContainer.style.backgroundColor = "blue";
     colorText.textContent = "Let's play the random color game!";
     boxContainer.innerHTML = `<div class="box"></div>
     <div class="box"></div>
@@ -96,15 +100,19 @@ const startGame = function() {
 // starts the game
 startBtn.addEventListener("click", startGame);
 
+// runs easyMode function and starts game
+
 easyBtn.addEventListener("click", function() {
     easyMode();
     startGame();
 })
+
+// runs hardMode function and starts game
 
 hardBtn.addEventListener("click", function() {
     hardMode();
     startGame();
     
 });
-
+// resets everything
 resetBtn.addEventListener("click", resetMode)
