@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.colorText {
+    font-size: 4rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+}
+
+.startBtn {
+    background-color: lightblue;
+}
+
+.easy {
+    background-color: lightgreen;
+}
+
+.hard {
+    background-color: lightcoral;
+}
+
+.colorNameContainer {
+    background-color: blue;
+}
+
+.box {
+    background-color: black;
+    width: 18rem;
+    height: 18rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+}
+
+.gameModes {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.boxContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.gameContainer {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15rem 7rem 3fr;
+    
+}
